@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+<!-- darkmode and light mode using bottom -->
+    <button>click me </button>
+    <script>
+
+        var button=document.querySelector('button');
+        var body=document.querySelector('body');
+        var darkmode=false;
+        button.addEventListener('click',function(){
+            darkmode=!darkmode;
+            if(darkmode){
+                body.style.backgroundColor='black';
+                body.style.color='white';
+            }
+            else{
+                body.style.backgroundColor='white';
+                body.style.color='black';
+            }
+        });
+      document.cookie="name=sandip, expires=Thu, 18 Dec 2023 12:00:00 UTC";
+        
+       </script>
+        <!-- <script>
+            var phone=prompt("Enter your phone number");
+        var regex=/^[0-9]\d{9}$/;
+        if(regex.test(phone)){
+            alert("Valid phone number");
+        }
+        else{
+            alert("Invalid phone number");
+        }
+
+        var email=prompt("Enter your email");
+        var regex=/^[a-zA-Z0-9+_.-]+(@achs)+$/;
+        if(regex.test(email)){
+            alert("Valid email");
+        }
+        else{
+            alert("Invalid email");
+        }
+    </script>
+     -->
+ 
+    </script>
+</body>
+</html>
